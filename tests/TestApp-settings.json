@@ -1,0 +1,95 @@
+{
+  "settings": [
+    {
+      "key": "UseMilFmt",
+      "valueType": "boolean",
+      "defaultValue": true,
+      "configTitle": "$literal0$",
+      "configPrompt": null,
+      "configType": "boolean",
+      "configError": null,
+      "configHelpUrl": null,
+      "configReadonly": false,
+      "configRequired": false,
+      "configOptions": null,
+      "configMin": null,
+      "configMax": null,
+      "configMaxLength": null
+    },
+    {
+      "key": "Url1",
+      "valueType": "string",
+      "defaultValue": "https://your.url.com",
+      "configTitle": "$literal1$",
+      "configPrompt": null,
+      "configType": "url",
+      "configError": null,
+      "configHelpUrl": null,
+      "configReadonly": false,
+      "configRequired": false,
+      "configOptions": null,
+      "configMin": null,
+      "configMax": null,
+      "configMaxLength": null
+    },
+    {
+      "key": "Str2",
+      "valueType": "string",
+      "defaultValue": "https://your.proxy.com",
+      "configTitle": "$literal2$",
+      "configPrompt": null,
+      "configType": "alphaNumeric",
+      "configError": null,
+      "configHelpUrl": null,
+      "configReadonly": false,
+      "configRequired": false,
+      "configOptions": null,
+      "configMin": null,
+      "configMax": null,
+      "configMaxLength": null
+    },
+    {
+      "key": "Num1",
+      "valueType": "number",
+      "defaultValue": 591751049,
+      "configTitle": "$literal3$",
+      "configPrompt": null,
+      "configType": "numeric",
+      "configError": null,
+      "configHelpUrl": null,
+      "configReadonly": false,
+      "configRequired": false,
+      "configOptions": null,
+      "configMin": null,
+      "configMax": null,
+      "configMaxLength": null
+    },
+    {
+      "key": "Num2",
+      "valueType": "number",
+      "defaultValue": 2023406814,
+      "configTitle": "$literal4$",
+      "configPrompt": null,
+      "configType": "numeric",
+      "configError": null,
+      "configHelpUrl": null,
+      "configReadonly": false,
+      "configRequired": false,
+      "configOptions": null,
+      "configMin": null,
+      "configMax": null,
+      "configMaxLength": null
+    }
+  ],
+  "supportsLiveValidation": false,
+  "languages": {
+    "valyrian": {
+      "$literal0$": "Use Military Format",
+      "$literal1$": "Url",
+      "$literal2$": "Your super string",
+      "$literal3$": "First number",
+      "$literal4$": "Second number",
+      "AppName": "TestApp"
+    }
+  }
+}
