@@ -72,11 +72,14 @@ def main() -> int:
     if bool(args.property_id) ^ bool(args.property_value):
         raise argp.error("--property-id and --property-value depend on each other - you must provide both or none")
 
-    properties[args.property_id] = args.property_value
+    if args.property_id is not None:
+        properties[args.property_id] = args.property_value
+
     if args.output_file:
         args.output_file.write(properties.bytes)
     else:
-        print("Modified properties with corresponding values:")
+        if args.property_id is not None:
+            print(f"Modified property {args.property_id} with value {args.property_value}")
         for prop in properties:
             print(f"{prop.name}: {prop.value}")
 
