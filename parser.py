@@ -331,7 +331,7 @@ class GarminProperties:
 
         # First 4 bytes right after the mid magic value are the length of the remaining property values
         [propertyValuesByteLength] = struct.unpack('>I', f.read(4))
-        assert fsize == f.tell() + propertyValuesByteLength, f"Invalid GARMIN.SET file - expected {fsize} but it seems like we'll need to read {f.tell() + propertyValuesByteLength:x} bytes in total"
+        assert fsize == f.tell() + propertyValuesByteLength, f"Invalid GARMIN.SET file - expected {fsize} but it seems like we'll need to read {f.tell() + propertyValuesByteLength} bytes in total"
 
         [fixedExpectedValue] = struct.unpack('>B', f.read(1))
         assert FIXED_VALUE_AFTER_MID_OF_FILE == fixedExpectedValue, f"Expected fixed value 0x{FIXED_VALUE_AFTER_MID_OF_FILE:x} but got 0x{fixedExpectedValue:x}"
